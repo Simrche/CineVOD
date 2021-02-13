@@ -1,0 +1,174 @@
+/* ------------ RESET ------------------------------------------------------------------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+#body {
+    min-height: 600px;
+}
+
+/* ---------- HEADER --------------------------------------------------------------------------------------------- */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(150, 150, 150);
+    height: 100px;
+    border-bottom: solid 4px black;
+    box-shadow: grey 2px 2px 5px;
+}
+
+#headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+#headerLeft img {
+    width: 10%;
+    margin-left: 50px;
+    padding-right: 25px;
+}
+
+#header nav ul {
+    display: flex;
+    margin-right: 50px;
+}
+
+#header nav ul li {
+    margin: 0 20px;
+}
+
+#header nav ul li a {
+    color: black;
+    font-size: 25px;
+}
+
+/* ----------- FOOTER ----------------------------------------------------------------- */
+
+#footer {
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 160px;
+}
+
+#footer div {
+    width: 25%;
+    height: 150px;
+    margin-top: 50px;
+}
+
+#footer div h2 {
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+#footer div hr {
+    height: 3px;
+    background-color: whitesmoke;
+    border: none;
+    margin-top: 5px;
+}
+
+#footer div p {
+    margin-top: 23px;
+    color: whitesmoke;
+}
+
+#footer li {
+    margin-top: 23px;
+    color: whitesmoke;
+}
+
+#footer li a {
+    color: whitesmoke;
+}
+
+/* ------------- CATEGORY ---------------------------- */
+
+.categoryButton {
+    border: black solid 2px;
+    background-color: grey;
+    color: white;
+    width: 280px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    font-size: 40px;
+}
+
+#allCategory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* ------------ MOVIE -------------------------------- */
+
+.movieButton {
+    border: black solid 2px;
+    background-color: grey;
+    color: white;
+    width: 280px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    font-size: 40px;
+}
+
+/* ------------ INDEX -------------------------------- */
+
+#indexh2 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 40px;
+}
+
+.indexPara {
+    width: 80%;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    font-size: 25px;
+}
+
+#voirFilms {
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    margin: 35px auto  auto;
+    padding: 11px 1px;
+}
+
+#voirFilms:hover {
+    background-color: whitesmoke;
+    color: black;
+    border: solid 1px black;
+    padding: 10px 0;
+    transition: 0.2s;
+}
