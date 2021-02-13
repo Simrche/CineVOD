@@ -18,6 +18,7 @@ class CreateMovieTable extends Migration
             $table->string('title_movie');
             $table->integer('prix');
             $table->integer('stock');
+            $table->string('img');
             $table->timestamps();
         });
 

@@ -6,6 +6,7 @@
     <ul>
         <li>Prix : {{$movie->prix}}</li>
         <li>Stock : {{$movie->stock}}</li>
+        <li><img src="{{$movie->img}}" alt="Affiche film"></li>
     </ul>
 
     <a href="{{route('movie.index')}}">retourner à la liste des films</a>

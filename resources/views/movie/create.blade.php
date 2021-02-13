@@ -23,6 +23,13 @@
         {!! Form::label("title_categorie", 'Categorie') !!}
         {!! Form::select("title_categorie", $movies, ['placeholder' => 'Type']) !!}
 
+        <br><br>
+
+        {!! Form::label("img", 'img') !!}
+        {!! Form::text("img", null, ['placeholder' => 'Url image']) !!}
+
+        <br><br>
+
         {!! Form::submit("Ajouter", null) !!}
 
     {!! Form::close() !!}

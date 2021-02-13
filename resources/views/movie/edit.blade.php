@@ -8,8 +8,8 @@
 
 {!! Form::open(array('route' => ['movie.update', $movies->id], 'method' => 'PUT')) !!}
 
-    {!! Form::label("title_categorie", 'Modifier le titre') !!}
-    {!! Form::text("title_categorie", $movies->title_movie) !!}
+    {!! Form::label("title_movie", 'Modifier le titre') !!}
+    {!! Form::text("title_movie", $movies->title_movie) !!}
 
     <br><br>
 
@@ -20,6 +20,11 @@
 
     {!! Form::label("stock", 'Modifier le stock') !!}
     {!! Form::number("stock", $movies->stock) !!}
+
+    <br><br>
+
+    {!! Form::label("img", "Modifier l'image") !!}
+    {!! Form::text("img", $movies->img) !!}
 
     <br><br>
 

@@ -8,6 +8,11 @@
         {!! Form::label("title_categorie", 'Titre') !!}
         {!! Form::text("title_categorie", null, ['placeholder' => 'Titre de la catégorie']) !!}
 
+        <br><br>
+
+        {!! Form::label("img", 'Image') !!}
+        {!! Form::text("img", null, ['placeholder' => 'Url image']) !!}
+
         {!! Form::submit("Ajouter", null) !!}
 
     {!! Form::close() !!}

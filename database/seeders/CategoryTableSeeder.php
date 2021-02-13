@@ -21,6 +21,7 @@ class CategoryTableSeeder extends Seeder
             Schema::disableForeignKeyConstraints();
             DB::table('categories')->insert([
                 'title_categorie' => $category,
+                'img' => 'https://i1.wp.com/blog.son-video.com/wp-content/uploads/2020/02/Gangs-Of-New-York-AFFICHE-CINEMA-ORIGINALE-1.jpg?resize=500%2C679&ssl=1',
             ]);
         }
     }

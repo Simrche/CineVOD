@@ -16,5 +16,6 @@ class Movie extends Model
         "prix",
         "stock",
         "title_categorie",
+        "img",
     ];
 }

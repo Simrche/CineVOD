@@ -4,6 +4,9 @@
 @section('main')
     <h1>Categorie {{$category->id}}</h1>
     <h2>{{$category->title_categorie}}</h2>
+    <img src="{{$category->img}}" alt="film affiche" style="width: 20%">
+
+    <br>
 
     <a href="{{route('category.index')}}">retourner à la liste des catégories</a>
 
