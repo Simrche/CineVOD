@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [WebsiteController::class, 'index']);
 
-Route::get('/films', [WebsiteController::class, 'films']);
+Route::get('/deco', [WebsiteController::class, 'deco']);
 
 Route::resource('/movie', MovieController::class);
 
@@ -30,3 +30,9 @@ Route::resource('/admin', AdminController::class);
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+// Les routes de gestion du panier
+Route::get('basket', "BasketController@show")->name('basket.show');
+Route::post('basket/add/{product}', "BasketController@add")->name('basket.add');
+Route::get('basket/remove/{product}', "BasketController@remove")->name('basket.remove');
+Route::get('basket/empty', "BasketController@empty")->name('basket.empty');

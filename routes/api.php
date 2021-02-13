@@ -18,10 +18,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/films', function() {
-    return \App\Models\Movie::all();
-});
-
 // Retourne un cours en particulier
 Route::get('/films/{filmId}', function($filmId) {
     return \App\Models\Movie::find($filmId);

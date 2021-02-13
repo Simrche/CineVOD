@@ -10,7 +10,8 @@ class WebsiteController extends Controller
         return view('index');
     }
 
-    public function films() {
-        return view('films');
+    public function deco() {
+        session(['admin' => null]);
+        return redirect()->route('category.index');
     }
 }

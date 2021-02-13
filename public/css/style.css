@@ -109,6 +109,7 @@ body {
 .categoryButton {
     border: black solid 2px;
     background-color: grey;
+    background-size: 100% 100%;
     color: white;
     width: 280px;
     height: 450px;
@@ -129,15 +130,16 @@ body {
 
 .movieButton {
     border: black solid 2px;
-    background-color: grey;
+    background-size: 100% 100%;
     color: white;
     width: 280px;
-    height: 100px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 25px;
     font-size: 40px;
+    background-color: grey;
 }
 
 /* ------------ INDEX -------------------------------- */

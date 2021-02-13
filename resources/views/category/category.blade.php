@@ -6,7 +6,7 @@
             <a href="{{route('category.create')}}" class="categoryButton">+</a>
         @endif
         @foreach ($category as $categorie)
-            <a href="{{route('category.show', ['category' => $categorie->id])}}" class="categoryButton">{{$categorie->title_categorie}}</a>
+            <a href="{{route('category.show', ['category' => $categorie->id])}}" class="categoryButton" style="background-image: url('{{$categorie->img}}')">{{$categorie->title_categorie}}</a>
         @endforeach
 
     </section>
