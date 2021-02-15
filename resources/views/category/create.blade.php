@@ -6,14 +6,16 @@
     {!! Form::open(array('route' => 'category.store', 'method' => 'POST')) !!}
 
         {!! Form::label("title_categorie", 'Titre') !!}
-        {!! Form::text("title_categorie", null, ['placeholder' => 'Titre de la catégorie']) !!}
+        {!! Form::text("title_categorie", null, ['class' => 'col-6 form-control', 'placeholder' => 'Titre']) !!}
 
         <br><br>
 
         {!! Form::label("img", 'Image') !!}
-        {!! Form::text("img", null, ['placeholder' => 'Url image']) !!}
+        {!! Form::text("img", null, ['class' => 'col-6 form-control', 'placeholder' => 'Url image']) !!}
 
-        {!! Form::submit("Ajouter", null) !!}
+        <br><br>
+
+        {!! Form::submit("Ajouter", ['class' => 'btn btn-success']) !!}
 
     {!! Form::close() !!}
 

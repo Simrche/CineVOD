@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\PanierController;
 use App\Http\Controllers\WebsiteController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,12 +28,8 @@ Route::resource('/category', CategoryController::class);
 
 Route::resource('/admin', AdminController::class);
 
+Route::resource('/panier', PanierController::class);
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
-
-// Les routes de gestion du panier
-Route::get('basket', "BasketController@show")->name('basket.show');
-Route::post('basket/add/{product}', "BasketController@add")->name('basket.add');
-Route::get('basket/remove/{product}', "BasketController@remove")->name('basket.remove');
-Route::get('basket/empty', "BasketController@empty")->name('basket.empty');

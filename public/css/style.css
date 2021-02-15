@@ -26,6 +26,10 @@ body {
     min-height: 600px;
 }
 
+.none {
+    display: none;
+}
+
 /* ---------- HEADER --------------------------------------------------------------------------------------------- */
 
 #header {
@@ -140,6 +144,12 @@ body {
     margin: 25px;
     font-size: 40px;
     background-color: grey;
+}
+
+#listOtherMovie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /* ------------ INDEX -------------------------------- */
