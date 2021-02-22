@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@if (null !== session('admin'))
+@if (auth()->check())
     @section('main')
 
     {!! Form::open(array('route' => 'movie.store', 'method' => 'POST')) !!}

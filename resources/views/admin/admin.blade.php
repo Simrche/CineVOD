@@ -4,16 +4,16 @@
     {!! Form::open(array('route' => 'admin.store', 'method' => 'POST')) !!}
 
     {!! Form::label("name", 'Name') !!}
-    {!! Form::text("name", null, ['placeholder' => 'Name']) !!}
+    {!! Form::text("name", null, ['class' => 'col-6 form-control', 'placeholder' => 'Name']) !!}
 
     <br><br>
 
     {!! Form::label("password", 'Mdp') !!}
-    {!! Form::password("password", null) !!}
+    {!! Form::password("password", ['class' => 'col-6 form-control', 'placeholder' => 'Mot de passe']) !!}
 
     <br><br>
 
-    {!! Form::submit("Connexion", null) !!}
+    {!! Form::submit("Connexion", ['class' => 'btn btn-success']) !!}
 
     <br><br>
 

@@ -14,4 +14,8 @@ class WebsiteController extends Controller
         session(['admin' => null]);
         return redirect()->route('category.index');
     }
+
+    public function notAuth() {
+        return view('notauth');
+    }
 }

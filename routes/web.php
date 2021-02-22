@@ -5,6 +5,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\PanierController;
 use App\Http\Controllers\WebsiteController;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +22,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [WebsiteController::class, 'index']);
 
 Route::get('/deco', [WebsiteController::class, 'deco']);
+
+Route::get('/notAuth', [WebsiteController::class, 'notAuth']);
 
 Route::resource('/movie', MovieController::class);
 

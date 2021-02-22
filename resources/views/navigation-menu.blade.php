@@ -15,6 +15,12 @@
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('movie.index') }}" :active="request()->routeIs('movie.index')">
+                        {{ __('Ajouter un film') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('category.create') }}" :active="request()->routeIs('categorie.index')">
+                        {{ __('Ajouter une catégorie') }}
+                    </x-jet-nav-link>
                 </div>
             </div>
 

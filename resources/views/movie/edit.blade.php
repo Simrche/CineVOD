@@ -1,5 +1,6 @@
 @extends('layouts.layout')
 
+@if (auth()->check())
 @section('main')
 
 <h1>Editer</h1>
@@ -33,3 +34,12 @@
 {!! Form::close() !!}
 
 @endsection
+
+@else
+
+@section('main')
+    <h2>Vous devez vous connectez pour acceder à cette page ! </h2>
+@endsection
+
+
+@endif
