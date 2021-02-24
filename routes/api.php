@@ -17,16 +17,3 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::middleware('auth:sanctum')->get('/coucou', function (Request $request) {
-    return response('salut');
-});
-
-Route::middleware('auth:sanctum')->get('/coucou', function (Request $request) {
-    return response('salut');
-});
-
-// Retourne un cours en particulier
-Route::get('/films/{filmId}', function($filmId) {
-    return \App\Models\Movie::find($filmId);
-});

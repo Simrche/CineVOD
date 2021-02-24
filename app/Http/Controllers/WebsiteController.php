@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class WebsiteController extends Controller
 {
     public function index() {
-        return view('index');
+        return redirect()->route('category.index');
     }
 
     public function deco() {

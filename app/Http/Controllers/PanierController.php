@@ -42,6 +42,7 @@ class PanierController extends Controller
             'id',
             'title_movie',
             'prix',
+            'img',
         ])->toArray();
         $request->session()->push('panier', $film);
         // $request->session()->forget('panier');

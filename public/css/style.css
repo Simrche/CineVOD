@@ -234,6 +234,7 @@ body {
 #sectionPanier {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 .productPanier {
@@ -243,5 +244,11 @@ body {
     justify-content: space-around;
     margin: 0 auto;
     align-items: center;
+}
 
+#infoPanier {
+    margin-left: 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
 }
