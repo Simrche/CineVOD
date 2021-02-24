@@ -15,8 +15,8 @@ class PanierController extends Controller
      */
     public function index()
     {
-        dd(session('panier'));
-        return view('panier.panier', compact('valeur'));
+        $valeurs = session('panier');
+        return view('panier.panier', compact('valeurs'));
     }
 
     /**
@@ -90,6 +90,7 @@ class PanierController extends Controller
      */
     public function destroy($id)
     {
-
+        session()->flush();
+        return redirect()->route('panier.index');
     }
 }

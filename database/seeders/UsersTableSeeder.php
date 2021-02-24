@@ -16,13 +16,10 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-            DB::table('users')->insert([
-                'name' => 'admin',
-                'email' => Str::random(10) . '@gmail.com',
-                'email_verified_at' => now(),
-                'password' => 'admin', // password
-                'remember_token' => Str::random(10),
-            ]);
-
+        DB::table('users')->insert([
+            'name' => Str::random(10),
+            'email' => Str::random(10) . '@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
     }
 }

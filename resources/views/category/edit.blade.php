@@ -22,7 +22,7 @@
 @else
 
     @section('main')
-            <h2>Vous devez être admin pour rajoutere des catégories !</h2>
-        @endsection
+        <h2>Vous devez être admin pour rajoutere des catégories !</h2>
+    @endsection
 
 @endif

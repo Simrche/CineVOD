@@ -228,3 +228,20 @@ body {
     padding: 10px 0;
     transition: 0.2s;
 }
+
+/* ---------------- PANIER -------------------------------- */
+
+#sectionPanier {
+    display: flex;
+    flex-direction: column;
+}
+
+.productPanier {
+    width: 90%;
+    display: flex;
+    border: solid black 2px;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+
+}
