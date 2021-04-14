@@ -1,3 +1,16 @@
+### POUR LANCER LE PROJET ###
+
+- Copier coller le fichier '.env example'
+- Le renommer ".env"
+- Crée une base de donnée et mettre son nom dans le .env
+
+Dans le terminal : 
+- npm install
+- composer install
+- php artisan migrate
+- php artisan db:seed
+- php artisan serve
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
